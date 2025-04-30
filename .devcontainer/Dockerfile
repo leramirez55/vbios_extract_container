@@ -49,8 +49,4 @@ RUN git clone https://github.com/awilliam/rom-parser.git /opt/rom-parser && \
 RUN git clone https://github.com/coderobe/VBiosFinder.git
 WORKDIR /opt/VBiosFinder
 RUN bundle install 
-RUN ln -s /opt/VBiosFinder/vbiosfinder /usr/local/bin/vbiosfinder
 WORKDIR /opt/VBiosFinder
-
-# # Set default command
-# ENTRYPOINT ["./vbiosfinder"]
